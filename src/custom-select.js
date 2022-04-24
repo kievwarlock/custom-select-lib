@@ -136,12 +136,11 @@ export function CustomSelect(selector, settings = defaultSettings) {
             .querySelectorAll(`.${CUSTOM_SELECT_CLASSNAME_OPTION}`)
             .forEach((item) => {
                 item.classList.remove(CUSTOM_SELECT_CLASSNAME_OPTION_SELECTED);
-
                 const dataValue = item.getAttribute('data-value');
 
                 if (dataValue === value) {
                     originSelectElement.value = value;
-                    globalSelectValueElement.innerText = item.innerText;
+                    globalSelectValueElement.innerText = item.innerHTML;
                     item.classList.add(CUSTOM_SELECT_CLASSNAME_OPTION_SELECTED);
                     closeMenu();
                     globalNewSelectElement.dispatchEvent(newOnChange);
