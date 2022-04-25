@@ -5,12 +5,27 @@ No dependencies needed.
 ## Install
 
 In HTML with the `script` tag:
+
+### file path: 
+```html
+build/assets/js/custom-select.js
+```
 ```html
 <script src="custom-select.js" type="text/javascript"></script>
 ```
 and:
+### file path:
+```html
+ build/assets/css/custom-select.css
+```
 ```html
 <link rel="stylesheet" href="custom-select.css">
+```
+
+## Example
+
+```html
+build/index.html 
 ```
 
 ## How it works
